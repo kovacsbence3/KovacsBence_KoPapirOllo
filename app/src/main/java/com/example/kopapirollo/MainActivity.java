@@ -58,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
         rockButton =findViewById(R.id.rockButton);
         paperButton =findViewById(R.id.paperButton);
         scissorsButton =findViewById(R.id.scissorsButton);
+        playerChoise = findViewById(R.id.playerOption);
+        machineChoise = findViewById(R.id.machineOptionImage);
         machineWins = 0;
         playerWins = 0;
         textResult.setText("Eredmény: Te: " + playerWins + " Gép: " + machineWins);
@@ -83,6 +85,7 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Sajnos vesztettél", Toast.LENGTH_SHORT).show();
                 machineWins++;
         }
+
     }
     };
 
