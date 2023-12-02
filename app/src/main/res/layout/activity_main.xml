@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eredmény:"
+        android:layout_above="@+id/paperButton"
+        android:id="@+id/result"
+        android:textSize="30sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A gép választása"
+        android:layout_above="@+id/result"
+        android:id="@+id/machineOption"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A te választásod"
+        android:layout_above="@+id/machineOptionImage"
+        android:id="@+id/playerOption"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:id="@+id/playerOptionImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@id/playerOption"
+        android:layout_centerInParent="true"
+        android:src="@drawable/rock" />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/rock"
+        android:id="@+id/machineOptionImage"
+        android:layout_above="@id/machineOption"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rockButton"
+        android:textSize="40sp"
+        android:layout_alignParentBottom="true"
+        android:text="Kő"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paperButton"
+        android:textSize="40sp"
+        android:layout_alignParentBottom="true"
+        android:text="Papír"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scissorsButton"
+        android:textSize="40sp"
+        android:layout_alignParentBottom="true"
+        android:text="Olló"
+        android:layout_alignParentEnd="true"/>
+
+
+
+
+</RelativeLayout>
